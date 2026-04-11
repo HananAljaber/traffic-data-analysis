@@ -1,6 +1,5 @@
 # traffic-data-analysis
 Traffic data analysis project using Python to explore congestion patterns, peak hours, busiest days, and vehicle distribution.
-
 # تحليل بيانات المرور
 
 ## نظرة عامة على المشروع
@@ -10,10 +9,12 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 ## أهداف المشروع
 
 * تحديد أكثر ساعات اليوم ازدحامًا.
+* تحليل ساعات الذروة المرورية.
 * معرفة أكثر أيام الأسبوع ازدحامًا.
-* تحليل مستويات المرور المختلفة.
-* دراسة توزيع أنواع المركبات.
-* تحديد أوقات الازدحام الشديد.
+* تحليل أنواع المركبات المختلفة.
+* معرفة أكثر حالات المرور تكرارًا.
+* تحليل الازدحام الشديد حسب الساعة.
+* دراسة المركبات الأكثر مساهمة أثناء الازدحام الشديد.
 * مقارنة المرور بين أيام العمل وعطلة نهاية الأسبوع.
 
 ## الأدوات المستخدمة
@@ -25,15 +26,23 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 
 ---
 
-## 1. متوسط حركة المرور حسب الساعة
+## 1. ما أكثر ساعة ازدحامًا؟
 
-يوضح الرسم تغير الحركة المرورية خلال اليوم، حيث تظهر ذروة صباحية بين 6 صباحًا و8 صباحًا، وذروة مسائية أعلى بين 4 مساءً و6 مساءً.
+يوضح هذا التحليل متوسط عدد المركبات حسب الساعة لتحديد أكثر ساعات اليوم ازدحامًا.
 
-![Average Traffic by Hour](https://github.com/HananAljaber/traffic-data-analysis/blob/main/output.png?raw=true)
+![Most Busy Hour](https://github.com/HananAljaber/traffic-data-analysis/blob/main/output2t.png?raw=true)
 
 ---
 
-## 2. متوسط حركة المرور حسب اليوم
+## 2. تحليل ساعات الذروة المرورية
+
+يوضح الرسم التغير في الحركة المرورية خلال ساعات اليوم، حيث تظهر ذروة صباحية بين 6 صباحًا و8 صباحًا، وذروة مسائية أعلى بين 4 مساءً و6 مساءً.
+
+![Peak Traffic Hours](https://github.com/HananAljaber/traffic-data-analysis/blob/main/output.png?raw=true)
+
+---
+
+## 3. ما أكثر يوم ازدحامًا؟
 
 يبين الرسم أن يوم السبت سجل أعلى متوسط للحركة المرورية، بينما كان يوم الأحد الأقل ازدحامًا.
 
@@ -41,7 +50,7 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 
 ---
 
-## 3. إجمالي المركبات حسب النوع
+## 4. ما أكثر أنواع المركبات استخدامًا وقت الزحام؟
 
 تمثل السيارات العدد الأكبر بفارق واضح مقارنة ببقية المركبات، مما يدل على الاعتماد الكبير على المركبات الخاصة.
 
@@ -49,23 +58,23 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 
 ---
 
-## 4. متوسط عدد المركبات حسب اليوم
+## 5. أي نوع مركبة يكون أعلى في أيام الأسبوع؟
 
-يوضح الرسم استقرار أعداد المركبات نسبيًا خلال أيام الأسبوع، مع استمرار السيارات كأكثر المركبات استخدامًا.
+يوضح الرسم متوسط أعداد المركبات خلال أيام الأسبوع، مع استمرار السيارات كأعلى نوع يوميًا.
 
 ![Average Vehicle Count by Day](https://github.com/HananAljaber/traffic-data-analysis/blob/main/output4.png?raw=true)
 
 ---
 
-## 5. عدد حالات المرور
+## 6. ما أكثر حالات المرور تكرارًا؟
 
-تعد حالة المرور الطبيعية normal الأكثر تكرارًا، بينما تظهر حالات الازدحام الشديد heavy بنسبة أقل.
+تعد حالة المرور الطبيعية normal الأكثر تكرارًا، بينما تظهر الحالات الأخرى بنسبة أقل.
 
 ![Traffic Situation Count](https://github.com/HananAljaber/traffic-data-analysis/blob/main/output5.png?raw=true)
 
 ---
 
-## 6. الازدحام الشديد حسب الساعة
+## 7. ما أكثر الساعات التي يحدث فيها ازدحام مروري شديد؟
 
 يتركز الازدحام الشديد خلال فترات الذروة الصباحية والمسائية، خصوصًا بين 4 مساءً و6 مساءً.
 
@@ -73,7 +82,7 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 
 ---
 
-## 7. متوسط المركبات أثناء الازدحام الشديد
+## 8. ما أنواع المركبات الأكثر مساهمة في الازدحام المروري الشديد؟
 
 تشير النتائج إلى أن السيارات هي المساهم الأكبر في حالات الازدحام الشديد مقارنة ببقية المركبات.
 
@@ -81,7 +90,7 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 
 ---
 
-## 8. متوسط المركبات حسب حالة المرور
+## 9. ما العلاقة بين عدد المركبات وحالة المرور؟
 
 كلما ارتفعت حالة المرور من منخفض إلى شديد، ازداد متوسط عدد المركبات بشكل واضح.
 
@@ -89,11 +98,11 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 
 ---
 
-## 9. أيام العمل مقابل عطلة نهاية الأسبوع
+## 10. هل أيام العمل أكثر ازدحامًا من نهاية الأسبوع؟
 
 لا يظهر فرق كبير في متوسط الحركة المرورية بين أيام العمل وعطلة نهاية الأسبوع.
 
-![Traffic Work Days vs Weekend](https://github.com/HananAljaber/traffic-data-analysis/blob/main/outpu2t.png?raw=true)
+![Traffic Work Days vs Weekend](https://github.com/HananAljaber/traffic-data-analysis/blob/main/output9.png?raw=true)
 
 ---
 
@@ -103,7 +112,7 @@ Traffic data analysis project using Python to explore congestion patterns, peak 
 * توجد ذروة صباحية بين 6 صباحًا و8 صباحًا.
 * يوم السبت الأعلى حركة مرورية.
 * يوم الأحد الأقل ازدحامًا.
-* السيارات تمثل النسبة الأكبر من المركبات.
+* السيارات هي النوع الأكثر استخدامًا.
 * الحالة الطبيعية normal هي الأكثر تكرارًا.
 * لا يوجد فرق كبير بين أيام العمل وعطلة نهاية الأسبوع.
 
